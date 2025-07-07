@@ -13,7 +13,10 @@ COMET_PROJECT_NAME = "omni-parser"
 COMET_WORKSPACE = "francesco-zuppichini"
 
 # # Finetuning OmniParser with Modal
+# Useful examples:
 # https://modal.com/docs/examples/long-training
+# https://modal.com/docs/examples/finetune_yolo
+# https://modal.com/docs/examples/flan_t5_finetune
 
 # Modal runs your code in the cloud inside containers. So to use it, we have to define the dependencies
 # of our code as part of the container's [image](https://modal.com/docs/guide/custom-container).
