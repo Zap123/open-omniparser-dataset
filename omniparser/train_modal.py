@@ -112,7 +112,7 @@ def train(resume_from_checkpoint=False):
     # make sure volume is synced
     volume.reload()
 
-    train_transform, val_transform = get_transforms((width, height))
+    train_transform, val_transform = get_transforms((height, width))
 
     image_processor = AutoImageProcessor.from_pretrained(
         checkpoint,
