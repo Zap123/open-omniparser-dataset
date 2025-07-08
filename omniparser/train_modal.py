@@ -48,7 +48,7 @@ image = (
 # We also create a persistent [Volume](https://modal.com/docs/guide/volumes) for storing datasets, trained weights, and inference outputs.
 
 volume = modal.Volume.from_name("dfine-finetune", create_if_missing=True)
-volume_path = Path("/root")  # the path to the volume from within the container
+volume_path = Path("/root") / "data"  # the path to the volume from within the container
 datasetPath = volume_path / "dataset"  # where the dataset will be downloaded
 
 # We attach both of these to a Modal [App](https://modal.com/docs/guide/apps).
