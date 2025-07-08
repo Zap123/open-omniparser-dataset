@@ -216,4 +216,4 @@ def train(resume_from_checkpoint=False):
 def main(resume_from_checkpoint=False):
     with modal.enable_output():
         download_dataset.remote()
-        train.remote(kwargs={"resume_from_checkpoint": resume_from_checkpoint})
+        train.remote()
