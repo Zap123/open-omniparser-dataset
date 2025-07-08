@@ -145,7 +145,7 @@ def train(resume_from_checkpoint=False):
     label2id = {v: k for k, v in id2label.items()}
 
     eval_compute_metrics_fn = MAPEvaluator(
-        image_processor=image_processor, threshold=0.05, id2label=id2label
+        image_processor=image_processor, threshold=0.01, id2label=id2label
     )
 
     model = AutoModelForObjectDetection.from_pretrained(
